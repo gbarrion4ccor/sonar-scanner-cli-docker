@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.url=https://github.com/SonarSource/sonar-scanner-
 
 ARG SONAR_SCANNER_HOME=/opt/sonar-scanner
 ARG SONAR_SCANNER_VERSION=5.0.1.3006
-ARG NODE_MAJOR=18
+ARG NODE_MAJOR=20
 ENV JAVA_HOME=/opt/java/openjdk \
     HOME=/tmp \
     XDG_CONFIG_HOME=/tmp \

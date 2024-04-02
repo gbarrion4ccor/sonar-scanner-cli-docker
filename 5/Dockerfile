@@ -45,6 +45,8 @@ RUN groupadd --system --gid 1000 scanner-cli && \
     chmod -R 777 "${SRC_PATH}" "${SONAR_USER_HOME}" "/opt/java/openjdk/lib/security/cacerts" && \
     rm -rf /var/lib/apt/lists/*
 
+RUN apt-get --no-install-recommends -qqy install npm
+
 COPY --chown=scanner-cli:scanner-cli bin /usr/bin/
 
 USER scanner-cli
